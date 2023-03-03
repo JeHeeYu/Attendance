@@ -13,7 +13,7 @@ Rectangle {
         y: 10
         width: 30
         height: 30
-        source: (isOpend === true) ? "file:///D:/Attendance/Attendance/Image/icon_Button_Close.png" : "file:///D:/Attendance/Attendance/Image/icon_hamburger.png"
+        source: (isOpend === true) ? "file:///D:/Attendance/Image/icon_Button_Close.png" : "file:///D:/Attendance/Image/icon_hamburger.png"
 
         MouseArea {
             anchors.fill: parent
@@ -28,7 +28,7 @@ Rectangle {
         y: 50
         width: parent.width
         height: 2
-        source: "file:///D:/Attendance/Attendance/Image/icon_horizontal_line.png"
+        source: "file:///D:/Attendance/Image/icon_horizontal_line.png"
     }
 
     Rectangle {

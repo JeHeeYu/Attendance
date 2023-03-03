@@ -33,7 +33,7 @@ Item {
                 x: 20
                 width: 30
                 height: 30
-                source: "file:///D:/Attendance/Attendance/Image/icon_hamburger.png"
+                source: "file:///D:/Attendance/Image/icon_hamburger.png"
                 anchors.verticalCenter: parent.verticalCenter
                 //anchors.leftMargin: 50
             }

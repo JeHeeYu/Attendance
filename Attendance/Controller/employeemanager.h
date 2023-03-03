@@ -1,7 +1,6 @@
 #ifndef EMPLOYEEMANAGER_H
 #define EMPLOYEEMANAGER_H
 
-
 class EmployeeManager
 {
 public:

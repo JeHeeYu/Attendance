@@ -10,7 +10,7 @@ Button {
 
     Image {
         anchors.fill: parent
-        source: "file:///D:/Attendance/Attendance/Image/icon_hamburger.png"
+        source: "file:///D:/Attendance/Image/icon_hamburger.png"
     }
 
     Text {
