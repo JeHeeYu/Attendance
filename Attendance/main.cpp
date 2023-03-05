@@ -2,12 +2,16 @@
 #include <QQmlApplicationEngine>
 
 #include "Controller/fileeventmanager.h"
+#include "Controller/databasemanager.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
+
+    FileEventManager fileManager;
+    DatabaseManager dbManager;
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));

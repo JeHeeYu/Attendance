@@ -7,15 +7,9 @@
 #include <QDir>
 #include <QDebug>
 
-
-
-
-
-#include <QtDebug>
-#include <QSqlDatabase>
-#include <QSqlQuery>
-
 #include "Common/Singleton.h"
+
+#define DATABASE_FOLDER_NAME        "DB"
 
 #define FILEEVENTMANAGER()      FileEventManager::Instance()
 
@@ -25,8 +19,9 @@ class FileEventManager : public QObject, public Singleton<FileEventManager>
 public:
     explicit FileEventManager(QObject *parent = nullptr);
 
+    void FolderInit();
     bool CreateDirectory(QString folderName, QString folderPath = "");
-    QString GetCurrentPath();
+    QString GetCurrentPath() const;
 };
 
 #endif // FILEEVENTMANAGER_H

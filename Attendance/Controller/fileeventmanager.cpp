@@ -2,12 +2,17 @@
 
 FileEventManager::FileEventManager(QObject *parent) : QObject (parent)
 {
+    FolderInit();
+}
+
+void FileEventManager::FolderInit()
+{
+    CreateDirectory(DATABASE_FOLDER_NAME);
 }
 
 bool FileEventManager::CreateDirectory(QString folderName, QString folderPath)
 {
     qDebug() << "[" << Q_FUNC_INFO << "]" << " folderName : " << folderName << " folderPath : " << folderPath;
-
 
     QDir directory(folderName);
 
@@ -38,7 +43,7 @@ bool FileEventManager::CreateDirectory(QString folderName, QString folderPath)
     }
 }
 
-QString FileEventManager::GetCurrentPath()
+QString FileEventManager::GetCurrentPath() const
 {
     QDir path;
 
